@@ -1,0 +1,30 @@
+// row para mobile
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.translate-main {
+  transform: translateY(-180px);
+}
+
+body {
+  background: linear-gradient(to left, #9808ccb7, #f97793c7);
+}
+
+.fondo {
+  width: 100%;
+  margin: auto;
+}
+
+
+
+

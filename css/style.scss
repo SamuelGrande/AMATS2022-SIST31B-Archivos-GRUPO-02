@@ -1,0 +1,9 @@
+@import "sass/general";
+
+@media screen and (max-width: 651px) {
+  @import "sass/header", "sass/body";
+}
+
+@media screen and (min-width: 651px) {
+  @import "sass/_desk_body.scss", "sass/desk_header","sass/desk-grid";
+}
