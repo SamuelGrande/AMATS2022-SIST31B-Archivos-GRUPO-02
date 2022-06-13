@@ -18,7 +18,7 @@
   $result = $stmt->get_result();
   $citas = $result->fetch_all(MYSQLI_ASSOC);
   if (count($citas) > 0) {
-    header("Location: /salon/index.php?view=agendar&err");
+    header("Location: /salon/index.php?view=servicios");
     exit;
   }
 
@@ -30,7 +30,7 @@
   $stmt->bind_param("ssssss", $id_usuario, $nombre_citador, $telefono, $servicio, $fecha, $hora);
   $exito = $stmt->execute();
   if ($exito) {
-    header("Location: /salon/index.php?view=agendar&exito");
+    header("Location: /salon/index.php?view=servicios");
   } else {
     die("Falló: ".$stmt->error);
   }
